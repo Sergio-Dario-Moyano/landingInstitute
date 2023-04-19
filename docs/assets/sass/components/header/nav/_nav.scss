@@ -1,0 +1,8 @@
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+
+  &__list {
+    display: none;
+  }
+}

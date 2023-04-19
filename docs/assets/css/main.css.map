@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../sass/base/_tipography.scss","../sass/base/_reset.scss","../sass/components/header/logo/_logo.scss","../sass/components/header/nav/_nav.scss"],"names":[],"mappings":"AAAQ;ACCR;EACE;EACA;EACA;;;AAGF;EACE;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;ACzBF;EACE;;AAEA;EACE;;;ACJJ;EACE;EACA;;AAEA;EACE","file":"main.css"}
