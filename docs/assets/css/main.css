@@ -216,12 +216,12 @@ a {
   width: 100%;
   height: 11rem;
   object-fit: cover;
-  border-radius: 0.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 .sectionThree__content__person {
   width: 85%;
   margin-left: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3);
 }
 .sectionThree__content__data {
@@ -240,6 +240,59 @@ a {
   font-size: 0.8rem;
   line-height: 1.4;
   color: #49515a;
+}
+
+.sectionFour {
+  border: 1px solid red;
+}
+.sectionFour__wrapper {
+  border: 1px solid green;
+  padding: 1rem;
+}
+.sectionFour__content {
+  position: relative;
+  z-index: 0;
+}
+.sectionFour__content__title {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #1b2631;
+  margin-bottom: 1rem;
+}
+.sectionFour__content__img {
+  width: 95%;
+  height: 27.5rem;
+  display: block;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: -1;
+}
+.sectionFour__content__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 3rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  width: 95%;
+  height: 440px;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(254, 254, 255, 0.1) 0%, rgb(30, 28, 89) 100%);
+}
+.sectionFour__content__name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.sectionFour__content__job {
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+.sectionFour__content__text {
+  font-weight: 500;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
