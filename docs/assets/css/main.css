@@ -295,4 +295,16 @@ a {
   margin-top: 1rem;
 }
 
+.footer {
+  background-color: #1b2631;
+}
+.footer__wrapper {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.footer__wrapper__span {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
 /*# sourceMappingURL=main.css.map */

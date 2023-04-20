@@ -1,0 +1,13 @@
+@use "../../../utilities/variables";
+
+.footer {
+  background-color: variables.$capacitarte--gray-700;
+  &__wrapper {
+    text-align: center;
+    padding: 1.5rem 0;
+    &__span {
+      font-size: 0.8rem;
+      color: variables.$capacitarte--white;
+    }
+  }
+}
