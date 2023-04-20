@@ -15,7 +15,6 @@ body {
   width: 100vw;
   height: 100vh;
   min-width: 375px;
-  padding: 1rem;
 }
 
 ul, ol {
@@ -34,11 +33,115 @@ a {
 }
 
 .header__nav {
+  padding: 0.7rem 1rem;
   display: flex;
   justify-content: space-between;
 }
 .header__nav__list {
   display: none;
+}
+
+.section__wrapper {
+  background-color: #1b2631;
+  padding-bottom: 1.5rem;
+  color: #fff;
+}
+.section__content__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.section__content__title {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.section__content__title--small {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1b2631;
+}
+.section__content__subTitle {
+  font-size: 1.8rem;
+}
+.section__content__subTitle span {
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  background-color: #db0f3c;
+  padding: 0 0.5rem;
+}
+.section__content__paragraph {
+  font-size: 1.1rem;
+  margin: 1rem 0 2rem;
+}
+.section__content__paragraph--small {
+  font-size: 0.95rem;
+  margin: 0.5rem 0 2rem;
+  color: #1b2631;
+}
+.section__content__form {
+  background-color: #fff;
+  text-align: center;
+  color: #767d83;
+  padding: 1.5rem 0.8rem 1rem;
+  border-radius: 0.5rem;
+}
+.section__content__input {
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+.section__content__input input[type=text], .section__content__input input[type=email], .section__content__input select {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 1px solid #767d83;
+}
+.section__content__input #pais {
+  width: 25%;
+  height: 100%;
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: 1px solid #767d83;
+  position: absolute;
+  z-index: 10;
+}
+.section__content__input .section__content__codeArea {
+  position: absolute;
+  left: 6rem;
+  line-height: 2.5rem;
+}
+.section__content__input__phone {
+  padding-left: 8rem;
+}
+.section__content__btn {
+  margin: 0.8rem;
+}
+.section__content__btn__submit {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #db0f3c;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+.section__content__span {
+  font-size: 0.75rem;
+  text-align: left;
+  color: #1b2631;
+}
+.section__content__placeholder {
+  color: #767d83;
+  position: absolute;
+  left: 1rem;
+  top: 0.6rem;
+}
+.section__wrapper__form {
+  padding: 0 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
