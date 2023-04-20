@@ -1,0 +1,57 @@
+@use "../../../utilities/variables";
+
+.sectionThree {
+
+  &__wrapper {
+    padding: 2rem 0;
+  }
+
+  &__content {
+
+    &__title {
+      font-size: 1.5rem;
+      text-align: center;
+      color: variables.$capacitarte--gray-700;
+      margin-bottom: 1rem;
+    }
+
+    &__testimonials {
+      // border: 1px solid red;
+      &__img {
+        display: block;
+        width: 100%;
+        height: 11rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+      }
+    }
+
+    &__person {
+      width: 85%;
+      margin-left: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .3);
+    }
+
+    &__data {
+      padding: 0 1rem 1.5rem;
+    }
+    
+    &__country {
+      display: flex;
+      justify-content: space-between;
+      margin: 1.5rem 0;
+    }
+
+    &__name {
+      font-weight: bold;
+      color: variables.$capacitarte--gray-700;
+    }
+
+    &__paragraph {
+      font-size: 0.8rem;
+      line-height: 1.4;
+      color: variables.$capacitarte--gray-500;
+    }
+  }
+}

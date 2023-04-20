@@ -202,4 +202,44 @@ a {
   margin: 1rem;
 }
 
+.sectionThree__wrapper {
+  padding: 2rem 0;
+}
+.sectionThree__content__title {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #1b2631;
+  margin-bottom: 1rem;
+}
+.sectionThree__content__testimonials__img {
+  display: block;
+  width: 100%;
+  height: 11rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.sectionThree__content__person {
+  width: 85%;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+}
+.sectionThree__content__data {
+  padding: 0 1rem 1.5rem;
+}
+.sectionThree__content__country {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+.sectionThree__content__name {
+  font-weight: bold;
+  color: #1b2631;
+}
+.sectionThree__content__paragraph {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #49515a;
+}
+
 /*# sourceMappingURL=main.css.map */
