@@ -2,8 +2,8 @@
 .section {
   &__wrapper {
     background-color: variables.$capacitarte--gray-700;
-    padding-bottom: 1.5rem;
-    color: #fff;
+    padding: 0 1rem 1.5rem;
+    color: variables.$capacitarte--white;
   }
 
   &__content__img {
@@ -72,7 +72,7 @@
     }
     
     &__input #pais {
-      width: 25%;
+      width: 30%;
       height: 100%;
       border-radius: 0.5rem 0 0 0.5rem;
       border: 1px solid variables.$capacitarte--gray-400;
@@ -82,7 +82,7 @@
 
     &__input .section__content__codeArea {
       position: absolute;
-      left: 6rem;
+      left: 7rem;
       line-height: 2.5rem;
     }
 

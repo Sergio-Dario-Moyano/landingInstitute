@@ -1,27 +1,43 @@
 @use "../../../utilities/variables";
 
-
 .sectionFour {
-  border: 1px solid red;
 
   &__wrapper {
-    border: 1px solid green;
     padding: 1rem;
   }
 
   &__content {
+    display: inline-block;
+    width: 24%;
+    margin: 2rem 0;
     position: relative;
     z-index: 0;
 
     &__title {
       font-size: 1.3rem;
       text-align: center;
-      color: #1b2631;
+      color: variables.$capacitarte--gray-700;
       margin-bottom: 1rem;
     }
 
+    &__fixed {
+      overflow-x: scroll;
+      overscroll-behavior-x: contain;
+      scroll-snap-type: x proximity;
+
+      &::-webkit-scrollbar{
+        display: none;
+      }
+    }
+
+    &__slide {
+      width: 400%;
+      display: flex;
+      gap: 1rem;
+    }
+
     &__img {
-      width: 95%;
+      width: 100%;
       height: 27.5rem;
       display: block;
       object-fit: cover;
@@ -39,7 +55,7 @@
       border-radius: 0.5rem;
       position: absolute;
       top: 0;
-      width: 95%;
+      width: 100%;
       height: 440px;
       color: #fff;
       background: linear-gradient(180deg, rgba(254, 254, 255, 0.1) 0%, rgba(30, 28, 89, 1) 100%);

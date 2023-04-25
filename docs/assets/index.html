@@ -26,11 +26,12 @@
 
     <main class="main">
       <section class="section">
+        <div class="section__content">
+          <div class="section__content__gradient"></div>
+          <img src="./img/chica-ordenador.jpg" class="section__content__img" alt="joven aprendiendo a programar">
+        </div>
         <div class="section__wrapper">
-          <div class="section__content">
-            <img src="./img/chica-ordenador.jpg" class="section__content__img" alt="joven aprendiendo a programar">
-          </div>
-          <div class="section__wrapper__form">
+          <div class="section__wrapper__text">
             <div class="section__content">
               <h2 class="section__content__title">Aprende un oficio y emprende un negocio.</h2>
             </div>
@@ -40,50 +41,53 @@
             <div class="section__content">
               <p class="section__content__paragraph">Somos la plataforma lider en formación de profesionales.</p>
             </div>
-            <div class="section__content__form">
-              <div class="section__content">
-                <h3 class="section__content__title section__content__title--small">¡Recibe información de precios y
-                  becas!</h3>
-                <p class="section__content__paragraph section__content__paragraph--small">Al recibir tu información, uno
-                  de nuestros asesores académicos se
-                  comunicará contigo.</p>
-              </div>
-              <div>
-                <form>
-                  <div class="section__content__input">
-                    <input type="text" name="" id="">
-                    <span class="section__content__placeholder">Nombre</span>
-                  </div>
-                  <div class="section__content__input">
-                    <input type="text" name="" id="">
-                    <span class="section__content__placeholder">Apellido</span>
-                  </div>
-                  <div class="section__content__input">
-                    <input type="email" name="" id="">
-                    <span class="section__content__placeholder">Correo Electrónico</span>
-                  </div>
-                  <div class="section__content__input">
-                    <select name="" id="pais">
-                      <option value="AR">Argentina</option>
-                    </select>
-                    <span class="section__content__codeArea">+54</span>
-                    <input type="text" name="" id="" class="section__content__input__phone">
-                  </div>
-                  <div class="section__content__input">
-                    <select name="" id="">
-                      <option value="AR"></option>
-                    </select>
-                    <span class="section__content__placeholder">Área de interes</span>
-                  </div>
-                  <div class="section__content__btn">
-                    <button type="submit" class="section__content__btn__submit">¡Quiero Conocer Precios!</button>
-                  </div>
-                  <div class="section__content">
-                    <span class="section__content__span">Al compartir tus datos, aceptas nuestros Términos de servicios
-                      y Política de privacidad.</span>
-                  </div>
-                </form>
-              </div>
+          </div>
+
+
+
+          <div class="section__content__form">
+            <div class="section__content">
+              <h3 class="section__content__title section__content__title--small">¡Recibe información de precios y
+                becas!</h3>
+              <p class="section__content__paragraph section__content__paragraph--small">Al recibir tu información, uno
+                de nuestros asesores académicos se
+                comunicará contigo.</p>
+            </div>
+            <div>
+              <form>
+                <div class="section__content__input">
+                  <input type="text" name="" id="">
+                  <span class="section__content__placeholder">Nombre</span>
+                </div>
+                <div class="section__content__input">
+                  <input type="text" name="" id="">
+                  <span class="section__content__placeholder">Apellido</span>
+                </div>
+                <div class="section__content__input">
+                  <input type="email" name="" id="">
+                  <span class="section__content__placeholder">Correo Electrónico</span>
+                </div>
+                <div class="section__content__input">
+                  <select name="" id="pais">
+                    <option value="AR">Argentina</option>
+                  </select>
+                  <span class="section__content__codeArea">+54</span>
+                  <input type="text" name="" id="" class="section__content__input__phone">
+                </div>
+                <div class="section__content__input">
+                  <select name="" id="">
+                    <option value="AR"></option>
+                  </select>
+                  <span class="section__content__placeholder">Área de interes</span>
+                </div>
+                <div class="section__content__btn">
+                  <button type="submit" class="section__content__btn__submit">¡Quiero Conocer Precios!</button>
+                </div>
+                <div class="section__content">
+                  <span class="section__content__span">Al compartir tus datos, aceptas nuestros Términos de servicios
+                    y Política de privacidad.</span>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -91,50 +95,98 @@
 
       <section class="sectionTwo">
         <div class="sectionTwo__wrapper">
-          <div class="sectionTwo__content__header">
-            <div class="sectionTwo__content">
-              <h2 class="sectionTwo__content__title">¿Qué te gustaría aprender?</h2>
-              <p class="sectionTwo__content__paragraph">
-                Elige entre más de 35 cursos. Usamos la tecnología a tu favor para que avences
-                fácilmente en todos los contenidos, siempre con el acompañamiento de un experto.
-              </p>
-            </div>
-            <div class="sectionTwo__slider">
-              <div class="sectionTwo__slider__content">
-                <img src="./img/chica-ordenador.jpg" alt="oficio x" class="sectionTwo__slider__content__img" />
-                <h3 class="sectionTwo__slider__content__title">Cuidado del adulto mayor</h3>
+          <div class="sectionTwo__wrapper__header">
+            <div class="sectionTwo__wrapper__header__background">
+              <div class="sectionTwo__wrapper__content">
+                <h2 class="sectionTwo__wrapper__content__title">¿Qué te gustaría aprender?</h2>
+                <p class="sectionTwo__wrapper__content__paragraph">
+                  Elige entre más de 35 cursos. Usamos la tecnología a tu favor para que avences
+                  fácilmente en todos los contenidos, siempre con el acompañamiento de un experto.
+                </p>
+              </div>
+              <div class="sectionTwo__wrapper__slider">
+                <div class="sectionTwo__wrapper__slider__content">
+
+                  <div class="sectionTwo__wrapper__slider__content__card">
+                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
+                      class="sectionTwo__wrapper__slider__content__card__img" />
+                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
+                  </div>
+                  <div class="sectionTwo__wrapper__slider__content__card">
+                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
+                      class="sectionTwo__wrapper__slider__content__card__img" />
+                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
+                  </div>
+                  <div class="sectionTwo__wrapper__slider__content__card">
+                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
+                      class="sectionTwo__wrapper__slider__content__card__img" />
+                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
+                  </div>
+                  <div class="sectionTwo__wrapper__slider__content__card">
+                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
+                      class="sectionTwo__wrapper__slider__content__card__img" />
+                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
+                  </div>
+                  <div class="sectionTwo__wrapper__slider__content__card">
+                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
+                      class="sectionTwo__wrapper__slider__content__card__img" />
+                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
+                  </div>
+                  <div class="sectionTwo__wrapper__slider__content__card">
+                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
+                      class="sectionTwo__wrapper__slider__content__card__img" />
+                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
+                  </div>
+                  <div class="sectionTwo__wrapper__slider__content__card">
+                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
+                      class="sectionTwo__wrapper__slider__content__card__img" />
+                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
+                  </div>
+                  <div class="sectionTwo__wrapper__slider__content__card">
+                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
+                      class="sectionTwo__wrapper__slider__content__card__img" />
+                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
+                  </div>
+                  <div class="sectionTwo__wrapper__slider__content__card">
+                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
+                      class="sectionTwo__wrapper__slider__content__card__img" />
+                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div>
-            <div class="sectionTwo__content__icons">
-              <h2 class="sectionTwo__content__title">Conocé nuestra modalidad de estudio</h2>
-              <div class="sectionTwo__content__icon">
-                <i class="fa-solid fa-globe"></i>
-                <span class="sectionTwo__content__text">100% online</span>
-              </div>
-              <div class="sectionTwo__content__icon">
-                <i class="fa-solid fa-globe"></i>
-                <span class="sectionTwo__content__text">Avanzá a tu ritmo pero acompañado</span>
-              </div>
-              <div class="sectionTwo__content__icon">
-                <i class="fa-solid fa-globe"></i>
-                <span class="sectionTwo__content__text">Clases en vivo y webinars</span>
-              </div>
-              <div class="sectionTwo__content__icon">
-                <i class="fa-solid fa-globe"></i>
-                <span class="sectionTwo__content__text">Actvidades prácticas en cada curso</span>
-              </div>
-              <div class="sectionTwo__content__icon">
-                <i class="fa-solid fa-globe"></i>
-                <span class="sectionTwo__content__text">Certificado digital</span>
-              </div>
-              <div class="sectionTwo__content__icon">
-                <i class="fa-solid fa-globe"></i>
-                <span class="sectionTwo__content__text">Contacto con expertos las 24 hs</span>
-              </div>
-              <div class="section__content__btn">
-                <button type="submit" class="section__content__btn__submit">¡Quiero Conocer Precios!</button>
+          <div class="sectionTwo__wrapper__body">
+            <div class="sectionTwo__wrapper__body__background">
+              <h2 class="sectionTwo__wrapper__body__title">Conocé nuestra modalidad de estudio</h2>
+              <div class="sectionTwo__wrapper__body__icons">
+                <div class="sectionTwo__wrapper__body__icon">
+                  <i class="fa-solid fa-globe"></i>
+                  <span class="sectionTwo__wrapper__body__text">100% online</span>
+                </div>
+                <div class="sectionTwo__wrapper__body__icon">
+                  <i class="fa-solid fa-clock"></i>
+                  <span class="sectionTwo__wrapper__body__text">Avanzá a tu ritmo pero acompañado</span>
+                </div>
+                <div class="sectionTwo__wrapper__body__icon">
+                  <i class="fa-solid fa-play"></i>
+                  <span class="sectionTwo__wrapper__body__text">Clases en vivo y webinars</span>
+                </div>
+                <div class="sectionTwo__wrapper__body__icon">
+                  <i class="fa-solid fa-wrench"></i>
+                  <span class="sectionTwo__wrapper__body__text">Actvidades prácticas en cada curso</span>
+                </div>
+                <div class="sectionTwo__wrapper__body__icon">
+                  <i class="fa-solid fa-certificate"></i>
+                  <span class="sectionTwo__wrapper__body__text">Certificado digital</span>
+                </div>
+                <div class="sectionTwo__wrapper__body__icon">
+                  <i class="fa-solid fa-headset"></i>
+                  <span class="sectionTwo__wrapper__body__text">Contacto con expertos las 24 hs</span>
+                </div>
+                <div class="section__content__btn sectionTwo__wrapper__body__btn">
+                  <button type="submit" class="section__content__btn__submit">¡Quiero Conocer Precios!</button>
+                </div>
               </div>
             </div>
           </div>
@@ -146,20 +198,67 @@
           <div class="sectionThree__content">
             <h2 class="sectionThree__content__title">Una comunidad que logra sus metas</h2>
           </div>
-          <div class="sectionThree__content__testimonials">
-            <div class="sectionThree__content__person">
-              <img src="./img/chica-ordenador.jpg" alt="cambiar imagen"
-                class="sectionThree__content__testimonials__img">
-              <div class="sectionThree__content__data">
-                <div class="sectionThree__content__country">
-                  <span class="sectionThree__content__name">María Torres</span>
-                  <span class="sectionThree__content__flag">banderita</span>
+          <div class="sectionThree__content__fixed">
+            <div class="sectionThree__content__testimonials">
+              <div class="sectionThree__content__testimonials__person">
+                <img src="./img/chica-ordenador.jpg" alt="cambiar imagen"
+                  class="sectionThree__content__testimonials__img">
+                <div class="sectionThree__content__testimonials__data">
+                  <div class="sectionThree__content__testimonials__country">
+                    <span class="sectionThree__content__testimonials__name">María Torres</span>
+                    <span class="sectionThree__content__testimonials__flag">banderita</span>
+                  </div>
+                  <p class="sectionThree__content__testimonials__paragraph">
+                    Fue hace 20 años, en el estado mexicano de Puebla, cuando María Guadalupe Torres comenzó un camino
+                    de
+                    autodescubrimiento y aprendizaje, que le ha mostrado que es capaz de lograr mucho más de lo que
+                    imaginaba.
+                  </p>
                 </div>
-                <p class="sectionThree__content__paragraph">
-                  Fue hace 20 años, en el estado mexicano de Puebla, cuando María Guadalupe Torres comenzó un camino de
-                  autodescubrimiento y aprendizaje, que le ha mostrado que es capaz de lograr mucho más de lo que
-                  imaginaba.
-                </p>
+              </div>
+              <div class="sectionThree__content__testimonials__person">
+                <img src="./img/chica-ordenador.jpg" alt="cambiar imagen"
+                  class="sectionThree__content__testimonials__img">
+                <div class="sectionThree__content__testimonials__data">
+                  <div class="sectionThree__content__testimonials__country">
+                    <span class="sectionThree__content__testimonials__name">María Torres</span>
+                    <span class="sectionThree__content__testimonials__flag">banderita</span>
+                  </div>
+                  <p class="sectionThree__content__testimonials__paragraph">
+                    Fue hace 20 años, en el estado mexicano de Puebla, cuando María Guadalupe Torres comenzó un camino
+                    de
+                    autodescubrimiento y aprendizaje, que le ha mostrado que es capaz de lograr mucho más de lo que
+                    imaginaba.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="sectionThree__content__testimonials__person sectionThree__content__testimonials__person--grid">
+                <img src="./img/chica-ordenador.jpg" alt="cambiar imagen"
+                  class="sectionThree__content__testimonials__img">
+                <div class="sectionThree__content__testimonials__data">
+                  <div class="sectionThree__content__testimonials__country">
+                    <span class="sectionThree__content__testimonials__name">María Torres</span>
+                    <span class="sectionThree__content__testimonials__flag">banderita</span>
+                  </div>
+                  <p class="sectionThree__content__testimonials__paragraph">
+                    Fue hace 20 años, en el estado mexicano de Puebla, cuando María Guadalupe Torres comenzó un camino
+                    de
+                    autodescubrimiento y aprendizaje, que le ha mostrado que es capaz de lograr mucho más de lo que
+                    imaginaba.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="sectionThree__content__testimonials__person sectionThree__content__testimonials__person--gridBtn">
+                <div class="sectionThree__content__btn">
+                  <button type="submit" class="section__content__btn__submit">¡Quiero Conocer Precios!</button>
+                </div>
+                <div class="sectionThree__content__testimonials__more">
+                  <button type="submit" class="sectionThree__content__testimonials__more__btn"><i
+                      class="fa-light fa-greater-than fa-beat-fade"></i></button>
+                  <div class="sectionThree__content__testimonials__more__text">¡Quiero conocer precios!</div>
+                </div>
               </div>
             </div>
           </div>
@@ -168,14 +267,43 @@
 
       <section class="sectionFour">
         <div class="sectionFour__wrapper">
-          <div class="sectionFour__content">
+          <div class="sectionFour__content__Titulo">
             <h2 class="sectionFour__content__title">Aprendé de los mejores expertos</h2>
           </div>
-          <div class="sectionFour__content">
-            <img src="./img/chica-ordenador.jpg" alt="imagen de la profesora Sandra" class="sectionFour__content__img">
-            <div class="sectionFour__content__info">
-              <span class="sectionFour__content__name">Sandra Santos</span>
-              <span class="sectionFour__content__job">Licenciada en Gerontología</span>
+          <div class="sectionFour__content__fixed">
+            <div class="sectionFour__content__slide">
+              <div class="sectionFour__content">
+                <img src="./img/chica-ordenador.jpg" alt="imagen de la profesora Sandra"
+                  class="sectionFour__content__img">
+                <div class="sectionFour__content__info">
+                  <span class="sectionFour__content__name">Sandra Santos</span>
+                  <span class="sectionFour__content__job">Licenciada en Gerontología</span>
+                </div>
+              </div>
+              <div class="sectionFour__content">
+                <img src="./img/chica-ordenador.jpg" alt="imagen de la profesora Sandra"
+                  class="sectionFour__content__img">
+                <div class="sectionFour__content__info">
+                  <span class="sectionFour__content__name">Sandra Santos</span>
+                  <span class="sectionFour__content__job">Licenciada en Gerontología</span>
+                </div>
+              </div>
+              <div class="sectionFour__content">
+                <img src="./img/chica-ordenador.jpg" alt="imagen de la profesora Sandra"
+                  class="sectionFour__content__img">
+                <div class="sectionFour__content__info">
+                  <span class="sectionFour__content__name">Sandra Santos</span>
+                  <span class="sectionFour__content__job">Licenciada en Gerontología</span>
+                </div>
+              </div>
+              <div class="sectionFour__content">
+                <img src="./img/chica-ordenador.jpg" alt="imagen de la profesora Sandra"
+                  class="sectionFour__content__img">
+                <div class="sectionFour__content__info">
+                  <span class="sectionFour__content__name">Sandra Santos</span>
+                  <span class="sectionFour__content__job">Licenciada en Gerontología</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="sectionFour__content__text">
@@ -187,7 +315,6 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <div class="footer__wrapper">
         <span class="footer__wrapper__span">© 2023 Sergio Moyano</span>

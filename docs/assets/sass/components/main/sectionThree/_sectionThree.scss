@@ -3,7 +3,7 @@
 .sectionThree {
 
   &__wrapper {
-    padding: 2rem 0;
+    padding: 2rem 1rem;
   }
 
   &__content {
@@ -15,8 +15,26 @@
       margin-bottom: 1rem;
     }
 
+    &__fixed {
+      overflow-x: scroll;
+      overscroll-behavior-x: contain;
+      scroll-snap-type: x proximity;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &__btn {
+      display: none;
+    }
+
     &__testimonials {
-      // border: 1px solid red;
+      width: 400%;
+      display: flex;
+      gap: 1rem;
+      padding: 0 0 1.5rem;
+
       &__img {
         display: block;
         width: 100%;
@@ -24,34 +42,61 @@
         object-fit: cover;
         border-radius: 0.5rem 0.5rem 0 0;
       }
-    }
 
-    &__person {
-      width: 85%;
-      margin-left: 1rem;
-      border-radius: 0 0  0.5rem 0.5rem;
-      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .3);
-    }
+      &__person {
+        width: 100%;
+        border-radius: 0 0 0.5rem 0.5rem;
+        box-shadow: 0 7px 4px 3px rgba(0, 0, 0, .3);
 
-    &__data {
-      padding: 0 1rem 1.5rem;
-    }
-    
-    &__country {
-      display: flex;
-      justify-content: space-between;
-      margin: 1.5rem 0;
-    }
+        &:last-child {
+          box-shadow: none;
+        }
+      }
 
-    &__name {
-      font-weight: bold;
-      color: variables.$capacitarte--gray-700;
-    }
+      &__data {
+        padding: 0 1rem 1.5rem;
+      }
 
-    &__paragraph {
-      font-size: 0.8rem;
-      line-height: 1.4;
-      color: variables.$capacitarte--gray-500;
+      &__country {
+        display: flex;
+        justify-content: space-between;
+        margin: 1.5rem 0;
+      }
+
+      &__name {
+        font-weight: bold;
+        color: variables.$capacitarte--gray-700;
+      }
+
+      &__paragraph {
+        font-size: 0.8rem;
+        line-height: 1.4;
+        color: variables.$capacitarte--gray-500;
+      }
+
+      &__more {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__btn {
+          width: 50px;
+          height: 50px;
+          margin-bottom: 0.5rem;
+          border-radius: 50%;
+          outline: none;
+          border: none;
+          background: transparent;
+          box-shadow: -5px 4px 5px 0px rgba(0, 0, 0, .3);
+
+          i {
+            font-size: 2rem;
+          }
+        }
+      }
+
     }
   }
 }
