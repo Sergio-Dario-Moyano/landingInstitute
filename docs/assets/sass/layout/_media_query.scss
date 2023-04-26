@@ -1,11 +1,11 @@
 @use "../utilities/variables";
+@use "../utilities/mixins";
 /*
   Medidas utilizadas para el diseño responsive:
     375px --> base
     576px --> small
-    768px -->standar
-    992px -->medium
-    1024px -->large
+    768px -->medium
+    992px -->large
     1200px -->extra large
 */
 
@@ -18,7 +18,7 @@
       z-index: 2;
 
       &__title {
-        font-size: 2.4rem;
+        @include mixins.title__text(2.4rem);
         font-weight: 700;
 
         &--small {
@@ -27,19 +27,28 @@
       }
 
       &__subTitle {
-        font-size: 2rem;
+        @include mixins.title__text(2rem);
       }
 
       &__gradient {
         width: 100%;
         height: 689px;
-        background: linear-gradient(180deg, rgba(255,255,255,0.00540540540540535) 37%, rgba(18,47,46,0.9891891891891892) 100%);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00540540540540535) 37%, rgba(18, 47, 46, 0.9891891891891892) 100%);
         position: absolute;
         z-index: 3;
       }
 
       &__img {
         height: 689px;
+      }
+
+
+      &__input .section__content__codeArea {
+        left: 7rem;
+      }
+
+      &__input__phone {
+        padding-left: 9rem;
       }
     }
 
@@ -52,7 +61,7 @@
       top: 10rem;
       left: 0;
       z-index: 4;
-      
+
       &__text {
         align-self: flex-end;
       }
@@ -63,6 +72,7 @@
     &__wrapper {
 
       &__header {
+        margin-bottom: 2rem;
         &__background {
           background-color: variables.$capacitarte--white;
         }
@@ -84,7 +94,7 @@
       &__body {
 
         &__title {
-          font-size: 1.8rem;
+          @include mixins.title__text(1.8rem);
         }
 
         &__icons {
@@ -95,27 +105,33 @@
           gap: 1rem 0;
 
           i {
-            font-size: 2rem;
+            @include mixins.title__text(2rem);
           }
-
         }
-        &__btn {
-          grid-column: 1 / -1;
+
+        &__content {
+          grid-column: 1/-1;
           width: 50%;
-          margin-top: 1rem 0 0;
-          justify-self: center;
+          margin: 0 auto
         }
       }
     }
   }
 
   .sectionThree {
+    &__wrapper {
+      margin: 1rem 0;
+    }
     &__content {
+
+      &__title {
+        margin-bottom: 2.5rem;
+      }
 
       &__btn {
         display: block;
       }
-    
+
       &__testimonials {
         width: 100%;
         display: grid;
@@ -137,13 +153,13 @@
             width: 50%;
           }
         }
-      
+
         &__more {
           display: none;
         }
       }
     }
-  } 
+  }
 
   .sectionFour {
 
@@ -151,9 +167,24 @@
       width: 100%;
       margin: 0.5rem 0;
 
+      &__title {
+        margin-bottom: 2.5rem;
+      }
+
       &__slide {
         width: 100%;
         flex-direction: column;
+      }
+
+      &__btn {
+        margin-top: 1rem;
+        &__submit {
+          margin: 0;
+        }
+      }
+
+      &__final {
+        margin-top: 1.5rem;
       }
     }
   }
@@ -168,20 +199,96 @@
     }
   }
 
+  .sectionTwo {
+    &__wrapper {
+      &__content {
+        &__title {
+          @include mixins.title__text(2.1rem);
+        }
+
+        &__paragraph {
+          @include mixins.title__text(1.1rem);
+        }
+      }
+
+      &__body {
+        &__title {
+          @include mixins.title__text(2.1rem);
+        }
+      }
+    }
+  }
+
+  .sectionThree {
+    &__content {
+      &__title {
+        @include mixins.title__text(2.1rem);
+      }
+    }
+  }
+
   .sectionFour {
 
     &__content {
+
+      &__title {
+        @include mixins.title__text(2.1rem);
+      }
 
       &__slide {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
+
+      &__final {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__text,
+      &__btn {
+        width: 45%;
+      }
     }
   }
 }
 
 @media screen and (min-width: 992px) {
+
+  .header {
+    &__nav {
+      &__list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-grow: 1;
+
+        &__item {
+          margin: 0 1rem 0 2rem;
+          @include mixins.title__text(0.8rem);
+
+          a {
+            color: variables.$capacitarte--gray-700;
+          }
+        }
+      }
+
+      &__icon--bars {
+        display: none;
+      }
+
+      &__phone {
+        span {
+          display: block;
+          margin-right: 0.5rem;
+        }
+
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
 
   .section {
     &__wrapper {
@@ -190,16 +297,28 @@
 
     &__content {
       &__subTitle {
-        font-size: 2rem;
+        @include mixins.title__text(2rem);
       }
     }
   }
+
   .sectionTwo {
     &__wrapper {
       &__slider {
         &__content {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    }
+  }
+
+  .sectionThree {
+  
+    &__content {
+      &__testimonials{
+        &__paragraph {
+          @include mixins.title__text(0.9rem);
         }
       }
     }
@@ -207,20 +326,57 @@
 }
 
 @media screen and (min-width:1200px) {
+
+  .header {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__nav {
+      padding: 1.5rem 1rem;
+
+      &__list {
+        &__item {
+          @include mixins.title__text(1rem);
+        }
+      }
+    }
+  }
+
   .section {
     &__wrapper {
       max-width: 1200px;
-      left: 27%;
+      width: 65%;
+      left: 50%;
+      transform: translate(-50%);
 
       &__text {
-        align-self: center;
         line-height: 1.3;
+      }
+    }
+
+    &__content {
+      &__title {
+        @include mixins.title__text(3rem);
+        
+        &--small {
+          @include mixins.title__text(1.1rem);
+        }
+      }
+      
+      &__subTitle {
+        line-height: normal;
+        @include mixins.title__text(2.5rem);
       }
     }
   }
 
   .sectionTwo {
     &__wrapper {
+
+      &__content {
+        margin: 2rem;
+      }
+
       &__header {
         &__background {
           max-width: 1200px;
@@ -231,20 +387,26 @@
       &__body {
 
         &__title {
-          font-size: 2.4rem;
+          @include mixins.title__text(2.4rem);
         }
 
         &__background {
           max-width: 1200px;
           margin: 0 auto;
         }
+
         &__icons {
           grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem 9rem;
+          gap: 1.5rem 1rem;
 
           i {
-            font-size: 2.5rem;
+            @include mixins.title__text(2.5rem);
           }
+        }
+
+        &__content {
+          grid-column: 2 / 3;
+          width: 100%;
         }
       }
     }
@@ -253,8 +415,9 @@
   .sectionThree {
     max-width: 1200px;
     margin: 0 auto;
+
     &__content {
-    
+
       &__testimonials {
         width: 100%;
         display: grid;
@@ -267,8 +430,13 @@
             grid-row: 1 / 2;
             width: 100%;
           }
+
+          &--gridBtn {
+            grid-column: 2 / 3;
+            width: 100%;
+          }
         }
-        
+
         &__btn {
           grid-column: 1 / -1;
           grid-row: 2 / 3;
@@ -277,16 +445,43 @@
         }
       }
     }
-  } 
+  }
 
   .sectionFour {
-    max-width: 1200px;
-    margin: 0 auto;
+
+    &__wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-bottom: 3rem;
+    }
 
     &__content {
 
+      &__title {
+        margin: 0 0 2rem;
+      }
+
       &__slide {
         grid-template-columns: repeat(4, 1fr);
+      }
+
+      &__final {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 2rem;
+        justify-content: space-evenly;
+      }
+
+      &__text {
+        text-align: center;
+      }
+
+      &__btn {
+        width: 30%;
+      }
+
+      &__background {
+        padding: 3rem 1rem;
       }
     }
   }

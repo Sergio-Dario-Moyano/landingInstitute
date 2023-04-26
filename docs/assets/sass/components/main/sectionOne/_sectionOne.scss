@@ -1,4 +1,5 @@
 @use  "../../../utilities/variables";
+@use  "../../../utilities/mixins";
 .section {
   &__wrapper {
     background-color: variables.$capacitarte--gray-700;
@@ -16,18 +17,18 @@
   &__content {
 
     &__title {
-      font-size: 1.8rem;
+      @include mixins.title__text(1.8rem);
       font-weight: 500;
 
       &--small {
-        font-size: 1.1rem;
+        @include mixins.title__text(1.1rem);
         font-weight: 700;
         color: variables.$capacitarte--gray-700;
       }
     }
 
     &__subTitle {
-      font-size: 1.8rem;
+      @include mixins.title__text(1.8rem);
       
       span {
         -webkit-box-decoration-break: clone;
@@ -38,11 +39,11 @@
     }
 
     &__paragraph {
-      font-size: 1.1rem;
+      @include mixins.title__text(1.1rem);
       margin: 1rem 0 2rem;
 
       &--small {
-        font-size: 0.95rem;
+        @include mixins.title__text(0.95rem);
         margin: 0.5rem 0 2rem;
         color: variables.$capacitarte--gray-700;
       }
@@ -58,13 +59,14 @@
 
     &__input {
       margin-bottom: 0.8rem;
-      position: relative;
+      // position: relative;
     }
-
+    
     &__input input[type="text"],
     &__input input[type="email"],
     &__input select {
       width: 100%;
+      padding-left: 1rem;
       height: 2.5rem;
       border-radius: 0.5rem;
       outline: none;
@@ -72,44 +74,36 @@
     }
     
     &__input #pais {
-      width: 30%;
-      height: 100%;
+      max-width: 40%;
+      width: 6.5rem;
       border-radius: 0.5rem 0 0 0.5rem;
       border: 1px solid variables.$capacitarte--gray-400;
       position: absolute;
       z-index: 10;
     }
 
-    &__input .section__content__codeArea {
-      position: absolute;
-      left: 7rem;
-      line-height: 2.5rem;
+    &__input__phone#phone {
+      position: relative;
+      padding-left: 7rem;
     }
 
-    &__input__phone {
-      padding-left: 8rem;
-    }
+    // &__input .section__content__codeArea {
+    //   border: 1px solid red;
+    //   position: absolute;
+    //   left: 107rem;
+    // }
+
 
     &__btn {
       margin-bottom: 0.8rem;
 
       &__submit {
-        width: 100%;
-        height: 3rem;
-        border-radius: 0.5rem;
-        outline: none;
-        border: none;
-        color: variables.$capacitarte--white;
-        background-color: variables.$capacitarte--primary;
-        font-size: 1rem;
-        font-weight: 500;
-        margin-top: 1.5rem;
-        cursor: pointer;
+        @include mixins.button__submit();
       }
     }
 
     &__span {
-      font-size: 0.75rem;
+      @include mixins.title__text(0.75rem);
       text-align: left;
       color: variables.$capacitarte--gray-700;
     }
@@ -120,7 +114,6 @@
       left: 1rem; 
       top: 0.6rem;
     }
-
   }
 
   &__wrapper__form {

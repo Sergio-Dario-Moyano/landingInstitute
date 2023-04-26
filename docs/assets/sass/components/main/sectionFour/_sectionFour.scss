@@ -1,7 +1,7 @@
 @use "../../../utilities/variables";
+@use "../../../utilities/mixins";
 
 .sectionFour {
-
   &__wrapper {
     padding: 1rem;
   }
@@ -14,7 +14,7 @@
     z-index: 0;
 
     &__title {
-      font-size: 1.3rem;
+      @include mixins.title__text(1.3rem);
       text-align: center;
       color: variables.$capacitarte--gray-700;
       margin-bottom: 1rem;
@@ -25,7 +25,7 @@
       overscroll-behavior-x: contain;
       scroll-snap-type: x proximity;
 
-      &::-webkit-scrollbar{
+      &::-webkit-scrollbar {
         display: none;
       }
     }
@@ -67,13 +67,28 @@
     }
 
     &__job {
-      font-size: 0.85rem;
+      @include mixins.title__text(0.85rem);
       font-weight: 300;
     }
 
     &__text {
       font-weight: 500;
       margin-top: 1rem;
+    }
+
+    &__btn {
+      display: flex;
+      justify-content: center;
+
+      &__submit {
+        @include mixins.button__submit();
+      }
+    }
+
+    &__background {
+      width: 100%;
+      padding: 2rem 1rem;
+      background-color: variables.$capacitarte--gray-100;
     }
   }
 }

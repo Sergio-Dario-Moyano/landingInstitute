@@ -1,4 +1,5 @@
 @use "../../../utilities/variables";
+@use "../../../utilities/mixins";
 
 .sectionThree {
 
@@ -9,7 +10,7 @@
   &__content {
 
     &__title {
-      font-size: 1.5rem;
+      @include mixins.title__text(1.5rem);
       text-align: center;
       color: variables.$capacitarte--gray-700;
       margin-bottom: 1rem;
@@ -26,6 +27,12 @@
     }
 
     &__btn {
+      grid-column: 1 / -1;
+
+      &__submit {
+        @include mixins.button__submit();
+      }
+
       display: none;
     }
 
@@ -60,6 +67,7 @@
       &__country {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin: 1.5rem 0;
       }
 
@@ -69,9 +77,19 @@
       }
 
       &__paragraph {
-        font-size: 0.8rem;
+        @include mixins.title__text(0.8rem);
         line-height: 1.4;
         color: variables.$capacitarte--gray-500;
+      }
+
+      &__flag {
+        &__img {
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 50%;
+          display: block;
+          object-fit: cover;
+        }
       }
 
       &__more {
@@ -82,6 +100,9 @@
         align-items: center;
 
         &__btn {
+          text-align: center;
+          line-height: 50px;
+          color: #000;
           width: 50px;
           height: 50px;
           margin-bottom: 0.5rem;
@@ -96,7 +117,6 @@
           }
         }
       }
-
     }
   }
 }

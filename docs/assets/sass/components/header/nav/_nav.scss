@@ -1,9 +1,26 @@
 .header__nav {
+
   padding: 0.7rem 1rem;
   display: flex;
   justify-content: space-between;
 
-  &__list {
+  &__btn {
+    background: transparent;
+    outline: none;
+    border: none;
+
+    i {
+      font-size: 2rem;
+    }
+  }
+
+  &__img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+
+  &__list, &__phone {
     display: none;
   }
 }

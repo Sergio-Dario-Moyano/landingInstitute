@@ -15,17 +15,22 @@
       <nav class="header__nav">
         <div class="header__nav__icon header__nav__icon--isologo"><i class="fa-brands fa-free-code-camp"></i></div>
         <ul class="header__nav__list">
-          <li class="header__nav__list__item">INICIO</li>
-          <li class="header__nav__list__item">¿QUÉ APRENDER?</li>
-          <li class="header__nav__list__item">TESTIMONIOS</li>
-          <li class="header__nav__list__item">STAFF</li>
+          <li class="header__nav__list__item"><a href="#inicio"> INICIO</a></li>
+          <li class="header__nav__list__item"><a href="#queAprender"> ¿QUÉ APRENDER?</a></li>
+          <li class="header__nav__list__item"><a href="#testimonios"> TESTIMONIOS</a></li>
+          <li class="header__nav__list__item"><a href="#staff"> STAFF</a></li>
         </ul>
-        <div class="header__nav__icon"><i class="fa-solid fa-bars"></i></div>
+        <div class="header__nav__icon header__nav__icon--bars"><button type="button" class="header__nav__btn"><i
+              class="fa-solid fa-bars"></i></button></div>
+        <div class="header__nav__phone">
+          <span> <img src="./img/icons/argentina.png" alt="País Argentina" class="header__nav__img"> </span>
+          <span>(+54) 11 5555 3322</span>
+        </div>
       </nav>
     </header>
 
     <main class="main">
-      <section class="section">
+      <section class="section" id="inicio">
         <div class="section__content">
           <div class="section__content__gradient"></div>
           <img src="./img/chica-ordenador.jpg" class="section__content__img" alt="joven aprendiendo a programar">
@@ -36,15 +41,12 @@
               <h2 class="section__content__title">Aprende un oficio y emprende un negocio.</h2>
             </div>
             <div class="section__content">
-              <h3 class="section__content__subTitle"><span>Registrate hoy y obtén 50% de descuento</span></h3>
+              <h3 class="section__content__subTitle"><span>Registrate hoy y obtén un 50% de descuento</span></h3>
             </div>
             <div class="section__content">
               <p class="section__content__paragraph">Somos la plataforma lider en formación de profesionales.</p>
             </div>
           </div>
-
-
-
           <div class="section__content__form">
             <div class="section__content">
               <h3 class="section__content__title section__content__title--small">¡Recibe información de precios y
@@ -56,29 +58,28 @@
             <div>
               <form>
                 <div class="section__content__input">
-                  <input type="text" name="" id="">
-                  <span class="section__content__placeholder">Nombre</span>
+                  <input type="text" name="" id="" placeholder="Nombre">
+                  <!-- <span class="section__content__placeholder">Nombre</span> -->
                 </div>
                 <div class="section__content__input">
-                  <input type="text" name="" id="">
-                  <span class="section__content__placeholder">Apellido</span>
+                  <input type="text" name="" id="" placeholder="Apellido">
+                  <!-- <span class="section__content__placeholder">Apellido</span> -->
                 </div>
                 <div class="section__content__input">
-                  <input type="email" name="" id="">
-                  <span class="section__content__placeholder">Correo Electrónico</span>
+                  <input type="email" name="" id="" placeholder="Correo Electrónico">
+                  <!-- <span class="section__content__placeholder">Correo Electrónico</span> -->
                 </div>
                 <div class="section__content__input">
                   <select name="" id="pais">
                     <option value="AR">Argentina</option>
                   </select>
-                  <span class="section__content__codeArea">+54</span>
-                  <input type="text" name="" id="" class="section__content__input__phone">
+                  <!-- <span class="section__content__codeArea">+54</span> -->
+                  <input type="text" name="" id="phone" class="section__content__input__phone" placeholder="telefono">
                 </div>
                 <div class="section__content__input">
                   <select name="" id="">
-                    <option value="AR"></option>
+                    <option value="AR">Area de interés</option>
                   </select>
-                  <span class="section__content__placeholder">Área de interes</span>
                 </div>
                 <div class="section__content__btn">
                   <button type="submit" class="section__content__btn__submit">¡Quiero Conocer Precios!</button>
@@ -93,7 +94,7 @@
         </div>
       </section>
 
-      <section class="sectionTwo">
+      <section class="sectionTwo" id="queAprender">
         <div class="sectionTwo__wrapper">
           <div class="sectionTwo__wrapper__header">
             <div class="sectionTwo__wrapper__header__background">
@@ -108,49 +109,39 @@
                 <div class="sectionTwo__wrapper__slider__content">
 
                   <div class="sectionTwo__wrapper__slider__content__card">
-                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
+                    <img src="./img/arquitectura.jpg" alt="Aquitectura"
                       class="sectionTwo__wrapper__slider__content__card__img" />
-                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
+                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Arquitectura</h3>
                   </div>
                   <div class="sectionTwo__wrapper__slider__content__card">
-                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
+                    <img src="./img/design.jpg" alt="Diseño orientado al arte"
                       class="sectionTwo__wrapper__slider__content__card__img" />
-                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
+                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Diseño orientado al arte</h3>
                   </div>
                   <div class="sectionTwo__wrapper__slider__content__card">
-                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
+                    <img src="./img/dibujo.jpg" alt="Dibujo realista"
                       class="sectionTwo__wrapper__slider__content__card__img" />
-                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
+                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Dibujo realista</h3>
                   </div>
                   <div class="sectionTwo__wrapper__slider__content__card">
-                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
+                    <img src="./img/indumentaria.jpg" alt="Diseño de indumentaria"
                       class="sectionTwo__wrapper__slider__content__card__img" />
-                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
+                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Diseño de indumentaria</h3>
                   </div>
                   <div class="sectionTwo__wrapper__slider__content__card">
-                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
+                    <img src="./img/manicura.jpg" alt="Manicuria"
                       class="sectionTwo__wrapper__slider__content__card__img" />
-                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
+                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Manicuria y Pedicura</h3>
                   </div>
                   <div class="sectionTwo__wrapper__slider__content__card">
-                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
+                    <img src="./img/peluqueria.jpg" alt="Peluqueria"
                       class="sectionTwo__wrapper__slider__content__card__img" />
-                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
+                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Peluqueria y Barbería</h3>
                   </div>
                   <div class="sectionTwo__wrapper__slider__content__card">
-                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
+                    <img src="./img/carpinteria.jpg" alt="Carpinteria"
                       class="sectionTwo__wrapper__slider__content__card__img" />
-                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
-                  </div>
-                  <div class="sectionTwo__wrapper__slider__content__card">
-                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
-                      class="sectionTwo__wrapper__slider__content__card__img" />
-                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
-                  </div>
-                  <div class="sectionTwo__wrapper__slider__content__card">
-                    <img src="./img/chica-ordenador.jpg" alt="oficio x"
-                      class="sectionTwo__wrapper__slider__content__card__img" />
-                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Cuidado del adulto mayor</h3>
+                    <h3 class="sectionTwo__wrapper__slider__content__card__title">Carpintería</h3>
                   </div>
                 </div>
               </div>
@@ -184,8 +175,8 @@
                   <i class="fa-solid fa-headset"></i>
                   <span class="sectionTwo__wrapper__body__text">Contacto con expertos las 24 hs</span>
                 </div>
-                <div class="section__content__btn sectionTwo__wrapper__body__btn">
-                  <button type="submit" class="section__content__btn__submit">¡Quiero Conocer Precios!</button>
+                <div class="sectionTwo__wrapper__body__content">
+                  <a href="#inicio" class="sectionTwo__wrapper__body__content__btn"><span>¡Quiero Conocer Precios!</span></a>
                 </div>
               </div>
             </div>
@@ -193,7 +184,7 @@
         </div>
       </section>
 
-      <section class="sectionThree">
+      <section class="sectionThree" id="testimonios">
         <div class="sectionThree__wrapper">
           <div class="sectionThree__content">
             <h2 class="sectionThree__content__title">Una comunidad que logra sus metas</h2>
@@ -201,12 +192,12 @@
           <div class="sectionThree__content__fixed">
             <div class="sectionThree__content__testimonials">
               <div class="sectionThree__content__testimonials__person">
-                <img src="./img/chica-ordenador.jpg" alt="cambiar imagen"
+                <img src="./img/person-1.jpg" alt="Persona 1"
                   class="sectionThree__content__testimonials__img">
                 <div class="sectionThree__content__testimonials__data">
                   <div class="sectionThree__content__testimonials__country">
                     <span class="sectionThree__content__testimonials__name">María Torres</span>
-                    <span class="sectionThree__content__testimonials__flag">banderita</span>
+                    <span class="sectionThree__content__testimonials__flag"><img class="sectionThree__content__testimonials__flag__img" src="./img/icons/argentina.png" alt="Bandera Argentina"> </span>
                   </div>
                   <p class="sectionThree__content__testimonials__paragraph">
                     Fue hace 20 años, en el estado mexicano de Puebla, cuando María Guadalupe Torres comenzó un camino
@@ -217,12 +208,12 @@
                 </div>
               </div>
               <div class="sectionThree__content__testimonials__person">
-                <img src="./img/chica-ordenador.jpg" alt="cambiar imagen"
+                <img src="./img/person-2.jpg" alt="Persona 2"
                   class="sectionThree__content__testimonials__img">
                 <div class="sectionThree__content__testimonials__data">
                   <div class="sectionThree__content__testimonials__country">
                     <span class="sectionThree__content__testimonials__name">María Torres</span>
-                    <span class="sectionThree__content__testimonials__flag">banderita</span>
+                    <span class="sectionThree__content__testimonials__flag"><img class="sectionThree__content__testimonials__flag__img" src="./img/icons/uruguay.png" alt="Bandera Uruguaya"> </span>
                   </div>
                   <p class="sectionThree__content__testimonials__paragraph">
                     Fue hace 20 años, en el estado mexicano de Puebla, cuando María Guadalupe Torres comenzó un camino
@@ -234,12 +225,12 @@
               </div>
               <div
                 class="sectionThree__content__testimonials__person sectionThree__content__testimonials__person--grid">
-                <img src="./img/chica-ordenador.jpg" alt="cambiar imagen"
+                <img src="./img/person-3.jpg" alt="Persona 3"
                   class="sectionThree__content__testimonials__img">
                 <div class="sectionThree__content__testimonials__data">
                   <div class="sectionThree__content__testimonials__country">
                     <span class="sectionThree__content__testimonials__name">María Torres</span>
-                    <span class="sectionThree__content__testimonials__flag">banderita</span>
+                    <span class="sectionThree__content__testimonials__flag"><img class="sectionThree__content__testimonials__flag__img" src="./img/icons/paraguay.png" alt="Bandera Paraguaya"> </span>
                   </div>
                   <p class="sectionThree__content__testimonials__paragraph">
                     Fue hace 20 años, en el estado mexicano de Puebla, cuando María Guadalupe Torres comenzó un camino
@@ -252,11 +243,10 @@
               <div
                 class="sectionThree__content__testimonials__person sectionThree__content__testimonials__person--gridBtn">
                 <div class="sectionThree__content__btn">
-                  <button type="submit" class="section__content__btn__submit">¡Quiero Conocer Precios!</button>
+                  <a href="#" class="sectionThree__content__btn__submit"><span>¡Quiero Conocer Precios!</span></a>
                 </div>
                 <div class="sectionThree__content__testimonials__more">
-                  <button type="submit" class="sectionThree__content__testimonials__more__btn"><i
-                      class="fa-light fa-greater-than fa-beat-fade"></i></button>
+                  <a href="#inicio" class="sectionThree__content__testimonials__more__btn"><i class="fa-light fa-greater-than fa-beat-fade"></i></a>
                   <div class="sectionThree__content__testimonials__more__text">¡Quiero conocer precios!</div>
                 </div>
               </div>
@@ -265,7 +255,7 @@
         </div>
       </section>
 
-      <section class="sectionFour">
+      <section class="sectionFour" id="staff">
         <div class="sectionFour__wrapper">
           <div class="sectionFour__content__Titulo">
             <h2 class="sectionFour__content__title">Aprendé de los mejores expertos</h2>
@@ -273,7 +263,7 @@
           <div class="sectionFour__content__fixed">
             <div class="sectionFour__content__slide">
               <div class="sectionFour__content">
-                <img src="./img/chica-ordenador.jpg" alt="imagen de la profesora Sandra"
+                <img src="./img/profesor-1.jpg" alt="Profesor 1"
                   class="sectionFour__content__img">
                 <div class="sectionFour__content__info">
                   <span class="sectionFour__content__name">Sandra Santos</span>
@@ -281,7 +271,7 @@
                 </div>
               </div>
               <div class="sectionFour__content">
-                <img src="./img/chica-ordenador.jpg" alt="imagen de la profesora Sandra"
+                <img src="./img/profesor-2.jpg" alt="Profesor 2"
                   class="sectionFour__content__img">
                 <div class="sectionFour__content__info">
                   <span class="sectionFour__content__name">Sandra Santos</span>
@@ -289,7 +279,7 @@
                 </div>
               </div>
               <div class="sectionFour__content">
-                <img src="./img/chica-ordenador.jpg" alt="imagen de la profesora Sandra"
+                <img src="./img/profesor-3.jpg" alt="Profesor 3"
                   class="sectionFour__content__img">
                 <div class="sectionFour__content__info">
                   <span class="sectionFour__content__name">Sandra Santos</span>
@@ -297,7 +287,7 @@
                 </div>
               </div>
               <div class="sectionFour__content">
-                <img src="./img/chica-ordenador.jpg" alt="imagen de la profesora Sandra"
+                <img src="./img/profesor-4.jpg" alt="Profesor 4"
                   class="sectionFour__content__img">
                 <div class="sectionFour__content__info">
                   <span class="sectionFour__content__name">Sandra Santos</span>
@@ -306,11 +296,15 @@
               </div>
             </div>
           </div>
-          <div class="sectionFour__content__text">
-            <span>¡Comienza hoy y accede a una beca!</span>
-          </div>
-          <div class="section__content__btn">
-            <button type="submit" class="section__content__btn__submit">¡Quiero Conocer Precios!</button>
+        </div>
+        <div class="sectionFour__content__background">
+          <div class="sectionFour__content__final">
+            <div class="sectionFour__content__text">
+              <span>¡Comienza hoy y accede a una beca!</span>
+            </div>
+            <div class="sectionFour__content__btn">
+              <a href="#inicio" class="sectionFour__content__btn__submit"><span>¡Quiero Conocer Precios!</span></a>
+            </div>
           </div>
         </div>
       </section>
