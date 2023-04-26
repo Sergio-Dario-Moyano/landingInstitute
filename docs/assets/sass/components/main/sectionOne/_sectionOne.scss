@@ -7,14 +7,22 @@
     color: variables.$capacitarte--white;
   }
 
-  &__content__img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-  }
+  // &__content__img {
+  //   width: 100%;
+  //   height: 100%;
+  //   display: block;
+  //   object-fit: cover;
+  // }
 
   &__content {
+    position: relative;
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    } 
 
     &__title {
       @include mixins.title__text(1.8rem);

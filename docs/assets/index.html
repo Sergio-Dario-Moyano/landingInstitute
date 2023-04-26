@@ -15,10 +15,25 @@
       <nav class="header__nav">
         <div class="header__nav__icon header__nav__icon--isologo"><i class="fa-brands fa-free-code-camp"></i></div>
         <ul class="header__nav__list">
-          <li class="header__nav__list__item"><a href="#inicio"> INICIO</a></li>
-          <li class="header__nav__list__item"><a href="#queAprender"> ¿QUÉ APRENDER?</a></li>
-          <li class="header__nav__list__item"><a href="#testimonios"> TESTIMONIOS</a></li>
-          <li class="header__nav__list__item"><a href="#staff"> STAFF</a></li>
+          <li class="header__nav__list__item"><a href="#inicio"> Inicio</a></li>
+          <li class="header__nav__list__item  header__nav__list__item--menu">
+            <a href="#queAprender"> Cursos</a>
+            <button class="header__nav__list__item__down" type="button">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <ul class="header__nav__list__item__menu">
+              <li class="header__nav__list__item__menu--item">Diseño de Indumentaria</li>
+              <li class="header__nav__list__item__menu--item">Diseño Orientado al Arte</li>
+              <li class="header__nav__list__item__menu--item">Taller de Carpintería</li>
+              <li class="header__nav__list__item__menu--item">Manicuría y Belleza</li>
+              <li class="header__nav__list__item__menu--item">Electricidad Domiciliaria</li>
+              <li class="header__nav__list__item__menu--item">Computación Avanzada</li>
+              <li class="header__nav__list__item__menu--item">Arquitectura Básica</li>
+              <li class="header__nav__list__item__menu--item">Marketing Digital</li>
+            </ul>
+          </li>
+          <li class="header__nav__list__item"><a href="#testimonios"> Testimonios</a></li>
+          <li class="header__nav__list__item"><a href="#staff"> Staff</a></li>
         </ul>
         <div class="header__nav__icon header__nav__icon--bars"><button type="button" class="header__nav__btn"><i
               class="fa-solid fa-bars"></i></button></div>
@@ -33,8 +48,9 @@
       <section class="section" id="inicio">
         <div class="section__content">
           <div class="section__content__gradient"></div>
-          <img src="./img/chica-ordenador.jpg" class="section__content__img" alt="joven aprendiendo a programar">
+          <img src="./img/chica-ordenador.jpg" class="section__content__img" alt="Imagen de portada de una mujer programando en una notebook">
         </div>
+
         <div class="section__wrapper">
           <div class="section__wrapper__text">
             <div class="section__content">
@@ -74,7 +90,7 @@
                     <option value="AR">Argentina</option>
                   </select>
                   <!-- <span class="section__content__codeArea">+54</span> -->
-                  <input type="text" name="" id="phone" class="section__content__input__phone" placeholder="telefono">
+                  <input type="text" name="" id="phone" class="section__content__input__phone" placeholder="Teléfono">
                 </div>
                 <div class="section__content__input">
                   <select name="" id="">
@@ -196,14 +212,11 @@
                   class="sectionThree__content__testimonials__img">
                 <div class="sectionThree__content__testimonials__data">
                   <div class="sectionThree__content__testimonials__country">
-                    <span class="sectionThree__content__testimonials__name">María Torres</span>
+                    <span class="sectionThree__content__testimonials__name">Romina Giselle</span>
                     <span class="sectionThree__content__testimonials__flag"><img class="sectionThree__content__testimonials__flag__img" src="./img/icons/argentina.png" alt="Bandera Argentina"> </span>
                   </div>
                   <p class="sectionThree__content__testimonials__paragraph">
-                    Fue hace 20 años, en el estado mexicano de Puebla, cuando María Guadalupe Torres comenzó un camino
-                    de
-                    autodescubrimiento y aprendizaje, que le ha mostrado que es capaz de lograr mucho más de lo que
-                    imaginaba.
+                    "Yo recomiendo Aprende Institute a cualquier persona que quiera aprender sobre lo que más le gusta y desee volverlo una fuente de ingresos confiable."
                   </p>
                 </div>
               </div>
@@ -212,14 +225,11 @@
                   class="sectionThree__content__testimonials__img">
                 <div class="sectionThree__content__testimonials__data">
                   <div class="sectionThree__content__testimonials__country">
-                    <span class="sectionThree__content__testimonials__name">María Torres</span>
+                    <span class="sectionThree__content__testimonials__name">Darío Rodriguez</span>
                     <span class="sectionThree__content__testimonials__flag"><img class="sectionThree__content__testimonials__flag__img" src="./img/icons/uruguay.png" alt="Bandera Uruguaya"> </span>
                   </div>
                   <p class="sectionThree__content__testimonials__paragraph">
-                    Fue hace 20 años, en el estado mexicano de Puebla, cuando María Guadalupe Torres comenzó un camino
-                    de
-                    autodescubrimiento y aprendizaje, que le ha mostrado que es capaz de lograr mucho más de lo que
-                    imaginaba.
+                    “Espero en algún momento comenzar a trabajar en el campo de los paneles solares y emprender mi propio negocio."
                   </p>
                 </div>
               </div>
@@ -229,14 +239,11 @@
                   class="sectionThree__content__testimonials__img">
                 <div class="sectionThree__content__testimonials__data">
                   <div class="sectionThree__content__testimonials__country">
-                    <span class="sectionThree__content__testimonials__name">María Torres</span>
+                    <span class="sectionThree__content__testimonials__name">Laura Fernandez</span>
                     <span class="sectionThree__content__testimonials__flag"><img class="sectionThree__content__testimonials__flag__img" src="./img/icons/paraguay.png" alt="Bandera Paraguaya"> </span>
                   </div>
                   <p class="sectionThree__content__testimonials__paragraph">
-                    Fue hace 20 años, en el estado mexicano de Puebla, cuando María Guadalupe Torres comenzó un camino
-                    de
-                    autodescubrimiento y aprendizaje, que le ha mostrado que es capaz de lograr mucho más de lo que
-                    imaginaba.
+                    “Por ahora quiero seguir aprendiendo y avanzando por la misma línea, así que me van a tener bastante tiempo en Aprende Institute. El aprendizaje es necesario para lograr lo que se quiere.”
                   </p>
                 </div>
               </div>
@@ -266,32 +273,32 @@
                 <img src="./img/profesor-1.jpg" alt="Profesor 1"
                   class="sectionFour__content__img">
                 <div class="sectionFour__content__info">
-                  <span class="sectionFour__content__name">Sandra Santos</span>
-                  <span class="sectionFour__content__job">Licenciada en Gerontología</span>
+                  <span class="sectionFour__content__name">Gabriel Palacios</span>
+                  <span class="sectionFour__content__job">Licenciado en Ingeniería Electromecánica</span>
                 </div>
               </div>
               <div class="sectionFour__content">
                 <img src="./img/profesor-2.jpg" alt="Profesor 2"
                   class="sectionFour__content__img">
                 <div class="sectionFour__content__info">
-                  <span class="sectionFour__content__name">Sandra Santos</span>
-                  <span class="sectionFour__content__job">Licenciada en Gerontología</span>
+                  <span class="sectionFour__content__name">Martin Santos</span>
+                  <span class="sectionFour__content__job">Licenciado en Ciencias Computacionales</span>
                 </div>
               </div>
               <div class="sectionFour__content">
                 <img src="./img/profesor-3.jpg" alt="Profesor 3"
                   class="sectionFour__content__img">
                 <div class="sectionFour__content__info">
-                  <span class="sectionFour__content__name">Sandra Santos</span>
-                  <span class="sectionFour__content__job">Licenciada en Gerontología</span>
+                  <span class="sectionFour__content__name">Sandra Torres</span>
+                  <span class="sectionFour__content__job">Licenciada en Marketing Digital</span>
                 </div>
               </div>
               <div class="sectionFour__content">
                 <img src="./img/profesor-4.jpg" alt="Profesor 4"
                   class="sectionFour__content__img">
                 <div class="sectionFour__content__info">
-                  <span class="sectionFour__content__name">Sandra Santos</span>
-                  <span class="sectionFour__content__job">Licenciada en Gerontología</span>
+                  <span class="sectionFour__content__name">Paula Zobra</span>
+                  <span class="sectionFour__content__job">Licenciada en Diseño de Indumentaria</span>
                 </div>
               </div>
             </div>
