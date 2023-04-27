@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" id="container">
     <header class="header">
       <nav class="header__nav">
         <div class="header__nav__icon header__nav__icon--isologo"><i class="fa-brands fa-free-code-camp"></i></div>
@@ -35,13 +35,49 @@
           <li class="header__nav__list__item"><a href="#testimonios"> Testimonios</a></li>
           <li class="header__nav__list__item"><a href="#staff"> Staff</a></li>
         </ul>
-        <div class="header__nav__icon header__nav__icon--bars"><button type="button" class="header__nav__btn"><i
-              class="fa-solid fa-bars"></i></button></div>
+        <div class="header__nav__icon header__nav__icon--bars">
+          <button type="button" class="header__nav__btn" id="btn__menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <button type="button" class="header__nav__btn header__nav__btn--close" id="btn__close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
         <div class="header__nav__phone">
           <span> <img src="./assets/img/icons/argentina.png" alt="País Argentina" class="header__nav__img"> </span>
           <span>(+54) 11 5555 3322</span>
         </div>
       </nav>
+
+      <section class="header__menu__responsive" id="header__menu__responsive">
+
+        <ul class="header__menu__responsive__list" id="menu__responsive">
+          <li class="header__menu__responsive__list__item"><a href="#inicio"> Inicio</a></li>
+          <li class="header__menu__responsive__list__item">
+            <a href="#queAprender"> Cursos</a>
+            <!-- <button class="header__nav__list__item__down" type="button">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button> -->
+            <!-- <ul class="header__nav__list__item__menu">
+              <li class="header__nav__list__item__menu--item">Diseño de Indumentaria</li>
+              <li class="header__nav__list__item__menu--item">Diseño Orientado al Arte</li>
+              <li class="header__nav__list__item__menu--item">Taller de Carpintería</li>
+              <li class="header__nav__list__item__menu--item">Manicuría y Belleza</li>
+              <li class="header__nav__list__item__menu--item">Electricidad Domiciliaria</li>
+              <li class="header__nav__list__item__menu--item">Computación Avanzada</li>
+              <li class="header__nav__list__item__menu--item">Arquitectura Básica</li>
+              <li class="header__nav__list__item__menu--item">Marketing Digital</li>
+            </ul> -->
+          </li>
+          <li class="header__menu__responsive__list__item"><a href="#testimonios"> Testimonios</a></li>
+          <li class="header__menu__responsive__list__item"><a href="#staff"> Staff</a></li>
+        </ul>
+
+
+
+
+
+      </section>
     </header>
 
     <main class="main">
@@ -323,6 +359,7 @@
     </footer>
   </div>
   <script src="https://kit.fontawesome.com/03c570d90c.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/menu.js"></script>
 </body>
 
 </html>

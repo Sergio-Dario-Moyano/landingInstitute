@@ -20,3 +20,17 @@
 @mixin title__text ($valor){
   font-size: $valor;
 }
+
+.top {
+  transform: translateY(355px);
+  transition: all 0.5s ease-in;
+}
+
+.down {
+  transform: translateY(-355px);
+  transition: all 0.5s ease-in;
+}
+
+.nonScroll {
+  overflow-y: hidden;
+}

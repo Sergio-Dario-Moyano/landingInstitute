@@ -286,24 +286,28 @@
           }
 
           &__menu {
-            display: none;
+            
             width: 15rem;
-            padding: 2rem 0;
+            padding: 2rem 0 0;
             position: absolute;
+            top: -30rem;
             z-index: 50;
-            top: 1.3rem;
             background-color: variables.$capacitarte--white;
-
+            transition: all 0.5s ease-in-out ;
+            
             &--item {
               padding: 1rem 0 1rem 2rem;
+              cursor: pointer;
             }
           }
-
+          
           &--menu:hover .header__nav__list__item__menu {
-            display: block;
-
+            transition: all 0.5s ease-in-out ;
+            top: 1.4rem;
+            
             &--item:hover {
               background-color: variables.$capacitarte--gray-200;
+              transition: all 0.2s ease-in-out ;
             }
           }
         }

@@ -39,9 +39,12 @@ a {
 }
 
 .header__nav {
+  background-color: #fff;
+  position: relative;
   padding: 0.7rem 1rem;
   display: flex;
   justify-content: space-between;
+  z-index: 100;
 }
 .header__nav__btn {
   background: transparent;
@@ -51,6 +54,9 @@ a {
 .header__nav__btn i {
   font-size: 2rem;
 }
+.header__nav__btn--close {
+  display: none;
+}
 .header__nav__img {
   width: 30px;
   height: 30px;
@@ -58,6 +64,39 @@ a {
 }
 .header__nav__list, .header__nav__phone {
   display: none;
+}
+
+.header__menu__responsive {
+  width: 100%;
+  height: 300px;
+  background-color: #d7dfe4;
+  position: fixed;
+  top: -300px;
+  left: 0;
+  z-index: 90;
+}
+.header__menu__responsive__list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top {
+  transform: translateY(355px);
+  transition: all 0.5s ease-in;
+}
+
+.down {
+  transform: translateY(-355px);
+  transition: all 0.5s ease-in;
+}
+
+.nonScroll {
+  overflow-y: hidden;
 }
 
 .section__wrapper {
@@ -665,22 +704,25 @@ a {
     cursor: pointer;
   }
   .header__nav__list__item__menu {
-    display: none;
     width: 15rem;
-    padding: 2rem 0;
+    padding: 2rem 0 0;
     position: absolute;
+    top: -30rem;
     z-index: 50;
-    top: 1.3rem;
     background-color: #fff;
+    transition: all 0.5s ease-in-out;
   }
   .header__nav__list__item__menu--item {
     padding: 1rem 0 1rem 2rem;
+    cursor: pointer;
   }
   .header__nav__list__item--menu:hover .header__nav__list__item__menu {
-    display: block;
+    transition: all 0.5s ease-in-out;
+    top: 1.4rem;
   }
   .header__nav__list__item--menu:hover .header__nav__list__item__menu--item:hover {
     background-color: #d7dfe4;
+    transition: all 0.2s ease-in-out;
   }
   .header__nav__icon--bars {
     display: none;

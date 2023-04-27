@@ -1,8 +1,11 @@
+@use "../../../utilities/variables";
 .header__nav {
-
+  background-color: variables.$capacitarte--white;
+  position: relative;
   padding: 0.7rem 1rem;
   display: flex;
   justify-content: space-between;
+  z-index: 100;
 
   &__btn {
     background: transparent;
@@ -12,7 +15,12 @@
     i {
       font-size: 2rem;
     }
+
+    &--close {
+      display: none;
+    }
   }
+
 
   &__img {
     width: 30px;
