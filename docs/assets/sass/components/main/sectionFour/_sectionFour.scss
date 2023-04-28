@@ -2,6 +2,7 @@
 @use "../../../utilities/mixins";
 
 .sectionFour {
+  background-color: variables.$capacitarte--white;
   &__wrapper {
     padding: 1rem;
   }

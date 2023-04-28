@@ -4,10 +4,7 @@
 .sectionTwo {
 
   &__wrapper {
-
-    &__header {
-      background-color: variables.$capacitarte--white;
-    }
+    background-color: variables.$capacitarte--white;
 
     &__content {
       padding: 2rem 1rem 0;

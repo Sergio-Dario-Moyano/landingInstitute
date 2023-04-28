@@ -38,8 +38,10 @@ a {
   color: red;
 }
 
-.header__nav {
+.header {
   background-color: #fff;
+}
+.header__nav {
   position: relative;
   padding: 0.7rem 1rem;
   display: flex;
@@ -69,7 +71,7 @@ a {
 .header__menu__responsive {
   width: 100%;
   height: 300px;
-  background-color: #d7dfe4;
+  background-color: #fff;
   position: fixed;
   top: -300px;
   left: 0;
@@ -204,7 +206,7 @@ a {
   padding: 0 1rem;
 }
 
-.sectionTwo__wrapper__header {
+.sectionTwo__wrapper {
   background-color: #fff;
 }
 .sectionTwo__wrapper__content {
@@ -301,6 +303,9 @@ a {
   cursor: pointer;
 }
 
+.sectionThree {
+  background-color: #fff;
+}
 .sectionThree__wrapper {
   padding: 2rem 1rem;
 }
@@ -408,6 +413,9 @@ a {
   font-size: 2rem;
 }
 
+.sectionFour {
+  background-color: #fff;
+}
 .sectionFour__wrapper {
   padding: 1rem;
 }
