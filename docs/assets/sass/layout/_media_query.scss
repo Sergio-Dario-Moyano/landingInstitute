@@ -254,6 +254,25 @@
       }
     }
   }
+
+  .successMessage {
+
+    &__content {
+      
+      &__title {
+        font-size: 2.5rem;
+      }
+
+      &__paragraph {
+        font-size: 1.1rem;
+        text-align: center;
+      }
+
+      &__strong {
+        font-size: 1.3rem;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -276,13 +295,7 @@
           }
 
           &__down {
-            width: 30px;
-            height: 30px;
-            border: none;
-            outline: none;
-            background: transparent;
-            margin-left: 0.5rem;
-            cursor: pointer;
+            @include mixins.btn__arrow__menu();
           }
 
           &__menu {
@@ -326,6 +339,10 @@
         display: flex;
         align-items: center;
       }
+    }
+
+    &__menu__responsive {
+      display: none;
     }
   }
 
@@ -521,6 +538,34 @@
 
       &__background {
         padding: 3rem 1rem;
+      }
+    }
+  }
+
+  .successMessage {
+
+    &__content {
+      max-width: 1000px;
+      margin: 0 auto;
+      
+      &__title {
+        font-size: 3rem;
+      }
+
+      &__icon i {
+        font-size: 2.5rem;
+      }
+
+      &__paragraph {
+        font-size: 1.3rem;
+      }
+
+      &__strong {
+        font-size: 1.5rem;
+      }
+
+      &__span {
+        font-size: 2.4rem;
       }
     }
   }

@@ -13,25 +13,18 @@
   <div class="container" id="container">
     <header class="header">
       <nav class="header__nav">
-        <div class="header__nav__icon header__nav__icon--isologo"><i class="fa-brands fa-free-code-camp"></i></div>
+        <div class="header__nav__icon header__nav__icon--isologo">
+          <div>
+            <i class="fa-brands fa-etsy"></i>
+          </div>
+          <div class="header__nav__icon__text">
+            <span>asy to</span>
+            <span>Learn</span>
+          </div>
+        </div>
         <ul class="header__nav__list">
           <li class="header__nav__list__item"><a href="#inicio"> Inicio</a></li>
-          <li class="header__nav__list__item  header__nav__list__item--menu">
-            <a href="#queAprender"> Cursos</a>
-            <button class="header__nav__list__item__down" type="button">
-              <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <ul class="header__nav__list__item__menu">
-              <li class="header__nav__list__item__menu--item">Diseño de Indumentaria</li>
-              <li class="header__nav__list__item__menu--item">Diseño Orientado al Arte</li>
-              <li class="header__nav__list__item__menu--item">Taller de Carpintería</li>
-              <li class="header__nav__list__item__menu--item">Manicuría y Belleza</li>
-              <li class="header__nav__list__item__menu--item">Electricidad Domiciliaria</li>
-              <li class="header__nav__list__item__menu--item">Computación Avanzada</li>
-              <li class="header__nav__list__item__menu--item">Arquitectura Básica</li>
-              <li class="header__nav__list__item__menu--item">Marketing Digital</li>
-            </ul>
-          </li>
+          <li class="header__nav__list__item  header__nav__list__item--menu"><a href="#queAprender"> Cursos</a></li>
           <li class="header__nav__list__item"><a href="#testimonios"> Testimonios</a></li>
           <li class="header__nav__list__item"><a href="#staff"> Staff</a></li>
         </ul>
@@ -44,26 +37,25 @@
           </button>
         </div>
         <div class="header__nav__phone">
+          <span><i class="fa-solid fa-phone"></i></span>
           <span> <img src="./assets/img/icons/argentina.png" alt="País Argentina" class="header__nav__img"> </span>
           <span>(+54) 11 5555 3322</span>
         </div>
       </nav>
 
       <section class="header__menu__responsive" id="header__menu__responsive">
-
         <ul class="header__menu__responsive__list" id="menu__responsive">
           <li class="header__menu__responsive__list__item"><a href="#inicio"> Inicio</a></li>
-          <li class="header__menu__responsive__list__item">
-            <a href="#queAprender"> Cursos</a>
-          </li>
+          <li class="header__menu__responsive__list__item"><a href="#queAprender"> Cursos</a></li>
           <li class="header__menu__responsive__list__item"><a href="#testimonios"> Testimonios</a></li>
           <li class="header__menu__responsive__list__item"><a href="#staff"> Staff</a></li>
+          <li class="header__menu__responsive__list__item">
+            <a href="#">
+              <span><i class="fa-solid fa-phone"></i></span>
+              <span>(+54) 11 5555 3322</span>
+            </a>
+          </li>
         </ul>
-
-
-
-
-
       </section>
     </header>
 
@@ -71,7 +63,8 @@
       <section class="section" id="inicio">
         <div class="section__content">
           <div class="section__content__gradient"></div>
-          <img src="./assets/img/chica-ordenador.jpg" class="section__content__img" alt="Imagen de portada de una mujer programando en una notebook">
+          <img src="./assets/img/chica-ordenador.jpg" class="section__content__img"
+            alt="Imagen de portada de una mujer programando en una notebook">
         </div>
 
         <div class="section__wrapper">
@@ -95,39 +88,60 @@
                 comunicará contigo.</p>
             </div>
             <div>
-              <form>
+              <form id="form">
+                <span class="section__content__placeholder" id="textName">Nombre</span>
                 <div class="section__content__input">
-                  <input type="text" name="" id="" placeholder="Nombre">
-                  <!-- <span class="section__content__placeholder">Nombre</span> -->
+                  <input type="text" name="Nombre" id="Nombre" placeholder="Nombre">
                 </div>
+                <span class="section__content__placeholder" id="textApellido">Apellido</span>
                 <div class="section__content__input">
-                  <input type="text" name="" id="" placeholder="Apellido">
-                  <!-- <span class="section__content__placeholder">Apellido</span> -->
+                  <input type="text" name="Apellido" id="Apellido" placeholder="Apellido">
                 </div>
+                <span class="section__content__placeholder" id="textEmail">Correo Electrónico</span>
                 <div class="section__content__input">
-                  <input type="email" name="" id="" placeholder="Correo Electrónico">
-                  <!-- <span class="section__content__placeholder">Correo Electrónico</span> -->
+                  <input type="email" name="CorreoElectronico" id="Email" placeholder="Correo Electrónico">
                 </div>
+                <span class="section__content__placeholder" id="textPhone">Teléfono</span>
                 <div class="section__content__input">
-                  <select name="" id="pais">
-                    <option value="AR">Argentina</option>
+                  <select name="Pais" id="pais">
+                    <option value="argentina" selected>Argentina</option>
+                    <option value="bolivia">Bolivia</option>
+                    <option value="chile">Chile</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="ecuador">Ecuador</option>
+                    <option value="paraguay">Paraguay</option>
+                    <option value="peru">Perú</option>
+                    <option value="uruguay">Uruguay</option>
+                    <option value="venezuela">Venezuela</option>
                   </select>
-                  <!-- <span class="section__content__codeArea">+54</span> -->
-                  <input type="text" name="" id="phone" class="section__content__input__phone" placeholder="Teléfono">
+
+                  <input type="number" name="Telefono" id="phone" class="section__content__input__phone"
+                    placeholder="Teléfono">
                 </div>
                 <div class="section__content__input">
-                  <select name="" id="">
-                    <option value="AR">Area de interés</option>
+                  <select name="AreaDeInteres" id="">
+                    <option value="catering" selected>Catering</option>
+                    <option value="cocina">Cocina</option>
+                    <option value="corte y confeccion">Corte y Confección</option>
+                    <option value="cosmetologia">Cosmetología</option>
+                    <option value="finanzas">Finanzas</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="nutricion">Nutrición</option>
+                    <option value="reposteria">Repostería</option>
+                    <option value="bienestar">Bienestar</option>
+                    <option value="oficios">Oficios</option>
                   </select>
                 </div>
                 <div class="section__content__btn">
-                  <button type="submit" class="section__content__btn__submit">¡Quiero Conocer Precios!</button>
+                  <button type="submit" class="section__content__btn__submit" id="btn__enviarData" disabled>¡Quiero Conocer
+                    Precios!</button>
                 </div>
                 <div class="section__content">
                   <span class="section__content__span">Al compartir tus datos, aceptas nuestros Términos de servicios
                     y Política de privacidad.</span>
                 </div>
               </form>
+              <a href="" class="emailHidden" id="emailSubmit"></a>
             </div>
           </div>
         </div>
@@ -215,7 +229,8 @@
                   <span class="sectionTwo__wrapper__body__text">Contacto con expertos las 24 hs</span>
                 </div>
                 <div class="sectionTwo__wrapper__body__content">
-                  <a href="#inicio" class="sectionTwo__wrapper__body__content__btn"><span>¡Quiero Conocer Precios!</span></a>
+                  <a href="#inicio" class="sectionTwo__wrapper__body__content__btn"><span>¡Quiero Conocer
+                      Precios!</span></a>
                 </div>
               </div>
             </div>
@@ -231,42 +246,48 @@
           <div class="sectionThree__content__fixed">
             <div class="sectionThree__content__testimonials">
               <div class="sectionThree__content__testimonials__person">
-                <img src="./assets/img/person-1.jpg" alt="Persona 1"
-                  class="sectionThree__content__testimonials__img">
+                <img src="./assets/img/person-1.jpg" alt="Persona 1" class="sectionThree__content__testimonials__img">
                 <div class="sectionThree__content__testimonials__data">
                   <div class="sectionThree__content__testimonials__country">
                     <span class="sectionThree__content__testimonials__name">Romina Giselle</span>
-                    <span class="sectionThree__content__testimonials__flag"><img class="sectionThree__content__testimonials__flag__img" src="./assets/img/icons/argentina.png" alt="Bandera Argentina"> </span>
+                    <span class="sectionThree__content__testimonials__flag"><img
+                        class="sectionThree__content__testimonials__flag__img" src="./assets/img/icons/argentina.png"
+                        alt="Bandera Argentina"> </span>
                   </div>
                   <p class="sectionThree__content__testimonials__paragraph">
-                    "Yo recomiendo Aprende Institute a cualquier persona que quiera aprender sobre lo que más le gusta y desee volverlo una fuente de ingresos confiable."
+                    "Yo recomiendo Aprende Institute a cualquier persona que quiera aprender sobre lo que más le gusta y
+                    desee volverlo una fuente de ingresos confiable."
                   </p>
                 </div>
               </div>
               <div class="sectionThree__content__testimonials__person">
-                <img src="./assets/img/person-2.jpg" alt="Persona 2"
-                  class="sectionThree__content__testimonials__img">
+                <img src="./assets/img/person-2.jpg" alt="Persona 2" class="sectionThree__content__testimonials__img">
                 <div class="sectionThree__content__testimonials__data">
                   <div class="sectionThree__content__testimonials__country">
                     <span class="sectionThree__content__testimonials__name">Darío Rodriguez</span>
-                    <span class="sectionThree__content__testimonials__flag"><img class="sectionThree__content__testimonials__flag__img" src="./assets/img/icons/uruguay.png" alt="Bandera Uruguaya"> </span>
+                    <span class="sectionThree__content__testimonials__flag"><img
+                        class="sectionThree__content__testimonials__flag__img" src="./assets/img/icons/uruguay.png"
+                        alt="Bandera Uruguaya"> </span>
                   </div>
                   <p class="sectionThree__content__testimonials__paragraph">
-                    “Espero en algún momento comenzar a trabajar en el campo de los paneles solares y emprender mi propio negocio."
+                    “Espero en algún momento comenzar a trabajar en el campo de los paneles solares y emprender mi
+                    propio negocio."
                   </p>
                 </div>
               </div>
               <div
                 class="sectionThree__content__testimonials__person sectionThree__content__testimonials__person--grid">
-                <img src="./assets/img/person-3.jpg" alt="Persona 3"
-                  class="sectionThree__content__testimonials__img">
+                <img src="./assets/img/person-3.jpg" alt="Persona 3" class="sectionThree__content__testimonials__img">
                 <div class="sectionThree__content__testimonials__data">
                   <div class="sectionThree__content__testimonials__country">
                     <span class="sectionThree__content__testimonials__name">Laura Fernandez</span>
-                    <span class="sectionThree__content__testimonials__flag"><img class="sectionThree__content__testimonials__flag__img" src="./assets/img/icons/paraguay.png" alt="Bandera Paraguaya"> </span>
+                    <span class="sectionThree__content__testimonials__flag"><img
+                        class="sectionThree__content__testimonials__flag__img" src="./assets/img/icons/paraguay.png"
+                        alt="Bandera Paraguaya"> </span>
                   </div>
                   <p class="sectionThree__content__testimonials__paragraph">
-                    “Por ahora quiero seguir aprendiendo y avanzando por la misma línea, así que me van a tener bastante tiempo en Aprende Institute. El aprendizaje es necesario para lograr lo que se quiere.”
+                    “Por ahora quiero seguir aprendiendo y avanzando por la misma línea, así que me van a tener bastante
+                    tiempo en Aprende Institute. El aprendizaje es necesario para lograr lo que se quiere.”
                   </p>
                 </div>
               </div>
@@ -276,7 +297,8 @@
                   <a href="#" class="sectionThree__content__btn__submit"><span>¡Quiero Conocer Precios!</span></a>
                 </div>
                 <div class="sectionThree__content__testimonials__more">
-                  <a href="#inicio" class="sectionThree__content__testimonials__more__btn"><i class="fa-light fa-greater-than fa-beat-fade"></i></a>
+                  <a href="#inicio" class="sectionThree__content__testimonials__more__btn"><i
+                      class="fa-light fa-greater-than fa-beat-fade"></i></a>
                   <div class="sectionThree__content__testimonials__more__text">¡Quiero conocer precios!</div>
                 </div>
               </div>
@@ -293,32 +315,28 @@
           <div class="sectionFour__content__fixed">
             <div class="sectionFour__content__slide">
               <div class="sectionFour__content">
-                <img src="./assets/img/profesor-1.jpg" alt="Profesor 1"
-                  class="sectionFour__content__img">
+                <img src="./assets/img/profesor-1.jpg" alt="Profesor 1" class="sectionFour__content__img">
                 <div class="sectionFour__content__info">
                   <span class="sectionFour__content__name">Gabriel Palacios</span>
                   <span class="sectionFour__content__job">Licenciado en Ingeniería Electromecánica</span>
                 </div>
               </div>
               <div class="sectionFour__content">
-                <img src="./assets/img/profesor-2.jpg" alt="Profesor 2"
-                  class="sectionFour__content__img">
+                <img src="./assets/img/profesor-2.jpg" alt="Profesor 2" class="sectionFour__content__img">
                 <div class="sectionFour__content__info">
                   <span class="sectionFour__content__name">Martin Santos</span>
                   <span class="sectionFour__content__job">Licenciado en Ciencias Computacionales</span>
                 </div>
               </div>
               <div class="sectionFour__content">
-                <img src="./assets/img/profesor-3.jpg" alt="Profesor 3"
-                  class="sectionFour__content__img">
+                <img src="./assets/img/profesor-3.jpg" alt="Profesor 3" class="sectionFour__content__img">
                 <div class="sectionFour__content__info">
                   <span class="sectionFour__content__name">Sandra Torres</span>
                   <span class="sectionFour__content__job">Licenciada en Marketing Digital</span>
                 </div>
               </div>
               <div class="sectionFour__content">
-                <img src="./assets/img/profesor-4.jpg" alt="Profesor 4"
-                  class="sectionFour__content__img">
+                <img src="./assets/img/profesor-4.jpg" alt="Profesor 4" class="sectionFour__content__img">
                 <div class="sectionFour__content__info">
                   <span class="sectionFour__content__name">Paula Zobra</span>
                   <span class="sectionFour__content__job">Licenciada en Diseño de Indumentaria</span>

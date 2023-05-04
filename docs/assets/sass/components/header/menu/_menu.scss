@@ -1,21 +1,30 @@
 @use "../../../utilities/variables";
+@use "../../../utilities/mixins";
 
 .header__menu__responsive {
   width: 100%;
-  height: 300px;
+  height: 350px;
   background-color: variables.$capacitarte--white;
   position: fixed;
-  top: -300px;
+  top: -350px;
   left: 0;
   z-index: 90;
-
+  
   &__list {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    background-color: variables.$capacitarte--white;
+    text-align: center;
+
+    &__item {
+      padding: 1.5rem 0;
+      &:hover {
+        background-color: variables.$capacitarte--gray-200;
+        transition: all 0.2s ease-in-out ;
+      }
+      a {
+        color: variables.$capacitarte--secondary-dark;
+      }
+    }
   }
 }

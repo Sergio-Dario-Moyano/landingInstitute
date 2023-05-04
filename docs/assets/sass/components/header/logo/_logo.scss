@@ -1,7 +1,19 @@
 .header__nav__icon {
-  font-size: 2rem;
-  
+
   &--isologo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+  
+  &--isologo i{
+    font-size: 2rem;
     color: red;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
   }
 }
